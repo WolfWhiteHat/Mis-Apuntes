@@ -1,0 +1,22 @@
+• **git init**: Inicializa un nuevo repositorio Git en la carpeta actual.
+• **git add nombre_de_archivo.md:** Añade un archivo específico al área de preparación (staging).
+• **git add .**: Añade todos los archivos modificados al área de preparación.
+• **git commit -m "Mensaje del commit"**: Guarda los cambios añadidos en el historial de versiones.
+• **git status:** Muestra el estado de los archivos del repositorio (modificados, sin seguimiento, listos para commit).
+• **git push origin main**: Empuja los commits locales al repositorio remoto en la rama main.
+• **git pull origin main**: Descarga y fusiona los cambios del repositorio remoto a tu rama local.
+• **git log**: Muestra el historial de commits.
+• **git log --oneline**: Muestra el historial de commits en una línea por commit.
+• **git branch**: Lista las ramas del repositorio.
+• **git branch nombre_rama**: Crea una nueva rama.
+• **git checkout nombre_rama**: Cambia a una rama diferente.
+• **git checkout -b nueva_rama**: Crea y cambia a una nueva rama.
+• **git merge nombre_rama**: Fusiona la rama nombre_rama con la rama actual.
+• **git remote -v**: Muestra los repositorios remotos asociados.
+• **git remote add origin URL**: Añade un repositorio remoto llamado origin.
+• **git clone URL**: Clona un repositorio remoto a tu máquina local.
+• **git fetch**: Descarga los cambios del repositorio remoto sin fusionarlos.
+• **git reset nombre_archivo.md**: Deshace cambios no comiteados en un archivo específico.
+• **git reset --soft HEAD^**: Deshace el último commit, manteniendo los cambios en los archivos.
+• **git stash**: Guarda los cambios no comiteados y limpia el área de trabajo.
+• **git stash apply**: Recupera los cambios guardados en el stash.
