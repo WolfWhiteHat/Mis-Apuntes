@@ -12,9 +12,10 @@ Aquí encontrarás un arsenal de conocimientos, tutoriales, guías y notas perso
 
 🚀 ¿Qué vas a encontrar aquí?
 
-📘 Apuntes organizados: Cada tema está estructurado de manera clara para que puedas navegar fácilmente entre las diferentes áreas de conocimiento.
-🔍 Ejemplos prácticos: No solo teoría, aquí verás ejemplos reales y técnicas que puedes poner a prueba.
-🛠️ Trucos y herramientas: Herramientas y utilidades esenciales para mejorar tu día a día como entusiasta de la seguridad.
+
+	•	📘 Apuntes organizados: Cada tema está estructurado de manera clara para que puedas navegar fácilmente entre las diferentes áreas de conocimiento.
+	•	🔍 Ejemplos prácticos: No solo teoría, aquí verás ejemplos reales y técnicas que puedes poner a prueba.
+	•	🛠️ Trucos y herramientas: Herramientas y utilidades esenciales para mejorar tu día a día como entusiasta de la seguridad.
 
 🎯 ¿Por qué deberías seguir estos apuntes?
 
