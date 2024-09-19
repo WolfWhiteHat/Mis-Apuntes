@@ -1,0 +1,1 @@
+Es una herramienta simple que te permite ver fácilmente todas las carpetas compartidas. Si compartes archivos a través de su red local con otros miembros, te recomendamos que utilices esta herramienta para ver todas sus carpetas compartidas.

@@ -1,0 +1,1 @@
+Wash y Reaver son dos herramientas diferentes para auditar equipos con el protocolo WPS (Wi-Fi Protected Setup) activado pero forman parte del mismo «paquete». Para poder comprobar la seguridad del WPS deberemos utilizar las dos, por lo que es fundamental hablar de ambas a la vez.

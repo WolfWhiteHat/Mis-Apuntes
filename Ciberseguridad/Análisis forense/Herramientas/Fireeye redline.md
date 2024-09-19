@@ -1,0 +1,5 @@
+FireEye Redline es una herramienta de análisis de seguridad de red (NSA) que se utiliza para detectar y responder a amenazas avanzadas. Fue desarrollada por la empresa de ciberseguridad FireEye, y se basa en la tecnología de inteligencia artificial y aprendizaje automático para identificar patrones de comportamiento sospechosos en la red.
+
+FireEye Redline funciona mediante la recopilación de datos de tráfico de red y el análisis de estos datos en busca de indicadores de compromiso (IoC). Estos IoC pueden incluir direcciones IP sospechosas, nombres de dominio, hashes de archivos y otros indicadores que pueden sugerir la presencia de una amenaza.
+
+Una vez que se identifican los IoC, FireEye Redline puede utilizarse para responder a las amenazas. Esto puede incluir el bloqueo del tráfico malicioso, la cuarentena de los archivos infectados y la notificación a los administradores de seguridad.

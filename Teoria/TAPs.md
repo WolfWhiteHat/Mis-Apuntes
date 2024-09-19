@@ -1,0 +1,2 @@
+Los TAPs de red (de Terminal Access Point), son unos de los dispositivos hardware más habitualmente usados para capturar tráfico de red, ya que tienen la capacidad de copiar, selectivamente, los datos que se están transmitiendo a través de una red en tiempo real, para analizarlos y almacenarlos. En la siguiente imagen se muestra una posible implementación de un TAP:
+![[Pasted image 20240116092026.png]]

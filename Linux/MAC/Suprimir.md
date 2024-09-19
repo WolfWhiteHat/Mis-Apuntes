@@ -1,0 +1,1 @@
+Fn + Cntr + option + Suprm

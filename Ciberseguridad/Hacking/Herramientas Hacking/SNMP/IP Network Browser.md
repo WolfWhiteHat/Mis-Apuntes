@@ -1,0 +1,2 @@
+IP Network Browser es una herramienta de software que permite a los usuarios ver y administrar los dispositivos conectados a una red informática. Se puede utilizar para ver las direcciones IP de los dispositivos, los nombres de host, las direcciones MAC y otra información. IP Network Browser también se puede utilizar para escanear puertos, rastrear rutas y realizar otras tareas de administración de red.
+

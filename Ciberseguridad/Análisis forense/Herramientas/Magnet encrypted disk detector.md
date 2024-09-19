@@ -1,0 +1,5 @@
+El Magnet Encrypted Disk Detector es una herramienta de software que se utiliza para detectar discos duros encriptados. Funciona buscando patrones específicos en los datos del disco duro que son característicos de los discos duros encriptados.
+
+El Magnet Encrypted Disk Detector es una herramienta muy útil para las fuerzas del orden y los investigadores forenses, ya que les permite encontrar discos duros encriptados que pueden contener pruebas importantes. Sin embargo, también puede ser utilizada por delincuentes para encontrar discos duros encriptados que contienen información sensible.
+
+Si está utilizando el Magnet Encrypted Disk Detector, es importante tener en cuenta que puede ser detectado por el software antivirus. Esto se debe a que el Magnet Encrypted Disk Detector utiliza técnicas similares a las que utilizan los virus para buscar datos en los discos duros.

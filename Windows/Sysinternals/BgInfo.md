@@ -1,0 +1,1 @@
+Esta herramienta está diseñada para mostrar información importante sobre su PC en su escritorio. Puede personalizar el aspecto de sus datos cambiando su estilo, fuente o color, y también puede agregar todo tipo de campos para mostrar información relevante. Además de agregar ciertos campos, también puede crear sus campos personalizados.

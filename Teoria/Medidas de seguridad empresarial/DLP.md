@@ -1,0 +1,1 @@
+Un sistema de prevención de pérdida de datos (DLP) está diseñado para evitar que los datos confidenciales se roben o escapen de una red. Supervisa y protege los datos en tres estados diferentes: datos en uso (datos a los que acceden un usuario), datos en movimiento (datos que viajan a través de la red) y datos en reposo (datos almacenados en una red o dispositivo informático).

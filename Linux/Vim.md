@@ -1,0 +1,5 @@
+Vim es un editor de texto muy potente y altamente configurable que se utiliza principalmente en entornos de línea de comandos en sistemas operativos Unix y Unix-like, como Linux y macOS. También está disponible para Windows. Vim es una versión mejorada y altamente configurable del editor vi, que ha existido desde hace décadas.
+
+- **Modo de inserción**: Para empezar a escribir o editar el texto, presiona la tecla `i`. Esto te llevará al modo de inserción y podrás empezar a escribir.
+- **Guardar y salir**: Una vez que hayas terminado de editar tu archivo, presiona `Esc` para salir del modo de inserción. Luego, escribe `:wq` y presiona `Enter`. Esto guardará tus cambios y cerrará Vim.
+- **Salir sin guardar**: Si quieres salir de Vim sin guardar los cambios, presiona `Esc` para salir del modo de inserción y luego escribe `:q!` y presiona `Enter`.

@@ -1,0 +1,1 @@
+Rootkit Hunter es una utilidad de escaneo de seguridad que puede ayudar a detectar la presencia de rootkits en sistemas Linux y Unix-like. Es útil para identificar si un sistema está comprometido con un rootkit, pero no es una herramienta de explotación.

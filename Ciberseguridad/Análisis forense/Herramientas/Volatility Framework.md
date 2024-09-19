@@ -1,0 +1,5 @@
+El **Volatility Framework** es un marco de trabajo de código abierto para el análisis de malware. Fue desarrollado por el equipo de investigación de seguridad de Google, **Project Zero**, y se utiliza para analizar el comportamiento de los programas maliciosos y detectar vulnerabilidades en el software.
+
+El Volatility Framework proporciona una serie de herramientas y técnicas para analizar la memoria volátil de un sistema informático, que es la memoria que se utiliza para almacenar datos temporales y código en ejecución. Esto permite a los analistas de seguridad obtener información sobre el estado actual de un sistema, incluso si el malware ya no está activo.
+
+El Volatility Framework también se puede utilizar para analizar el firmware de los dispositivos, como los routers y los switches. Esto permite a los analistas de seguridad detectar vulnerabilidades en el firmware que podrían ser explotadas por los atacantes.

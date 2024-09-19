@@ -1,0 +1,1 @@
+Es un sistema de composición de textos, orientado a la creación de documentos escritos que presenten una alta calidad tipográfica. 

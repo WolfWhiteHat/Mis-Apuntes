@@ -1,0 +1,1 @@
+Esta técnica se utiliza para manipular objetos del kernel de forma directa, permitiendo a los atacantes modificar estructuras de datos cruciales en el núcleo del sistema operativo. Si se implementa correctamente, puede permitir la ocultación de procesos y archivos relacionados con el rootkit.

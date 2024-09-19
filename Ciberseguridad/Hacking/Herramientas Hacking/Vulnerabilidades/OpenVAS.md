@@ -1,0 +1,5 @@
+OpenVAS (Open Vulnerability Assessment System) es una herramienta de código abierto para la gestión de vulnerabilidades. Se utiliza para escanear redes y sistemas en busca de vulnerabilidades de seguridad y proporciona información detallada sobre las vulnerabilidades encontradas. OpenVAS es una herramienta muy completa y potente, y se utiliza en una amplia variedad de entornos, desde pequeñas empresas hasta grandes corporaciones.
+
+OpenVAS funciona escaneando redes y sistemas en busca de vulnerabilidades conocidas. Utiliza una variedad de técnicas de escaneo, incluyendo escaneo de puertos, escaneo de vulnerabilidades y escaneo de aplicaciones web. OpenVAS también puede utilizarse para escanear sistemas en busca de malware y otros tipos de amenazas de seguridad.
+
+Una vez que OpenVAS ha completado un escaneo, proporciona un informe detallado de los resultados. El informe incluye información sobre las vulnerabilidades encontradas, así como recomendaciones sobre cómo mitigarlas. OpenVAS también puede utilizarse para generar informes personalizados, que pueden ser útiles para cumplir con los requisitos de seguridad específicos.

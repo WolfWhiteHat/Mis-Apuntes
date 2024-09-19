@@ -1,0 +1,1 @@
+Similar a Jynx2, Kbeast es una herramienta utilizada para explotar rootkits en sistemas Linux. Permite a los atacantes cargar módulos del kernel maliciosos y ocultar la presencia de rootkits en el sistema comprometido.

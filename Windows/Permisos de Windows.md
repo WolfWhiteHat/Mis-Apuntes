@@ -1,0 +1,47 @@
+
+## **Usuarios Windows**
+- `NT Authority\LocalSystem`: Una cuenta de usuario incorporada en Windows con privilegios extremadamente elevados. Se utiliza para ejecutar servicios del sistema y tiene acceso a prácticamente todos los recursos del sistema.
+- `NT Authority\NetworkService`: Otra cuenta de usuario incorporada utilizada por los servicios del sistema para acceder a recursos en la red local. Tiene menos privilegios que LocalSystem pero más que una cuenta de usuario normal.
+- `NT Authority\LocalService`: Similar a NetworkService, esta cuenta de usuario incorporada se utiliza para ejecutar servicios del sistema, pero solo tiene acceso a recursos locales y no a recursos de red.
+- `Administrator`: La cuenta de usuario predeterminada con privilegios de administrador en el sistema. Tiene acceso completo al sistema y puede realizar cambios en la configuración y el software.
+- `Guest`: Una cuenta de usuario limitada que se utiliza para proporcionar acceso temporal o restringido a un sistema. Por lo general, tiene derechos de usuario básicos y se usa para permitir que los usuarios accedan a sistemas sin proporcionar credenciales.
+- `Usuario`: Cuenta de usuario estándar utilizada para el acceso diario al sistema. Tiene derechos de usuario normales y no puede realizar cambios en la configuración del sistema sin privilegios adicionales.
+
+## **Privilegios de Windows**
+- `SeImpersonatePrivilege`: Este privilegio permite a un proceso asumir o "impersonar" la identidad de otro usuario o entidad de seguridad mientras realiza operaciones en su nombre. Es utilizado para permitir que servicios del sistema, aplicaciones y otros procesos actúen en nombre de otros usuarios o servicios de manera segura y adecuada.
+- `SeAssignPrimaryTokenPrivilege`: Este privilegio permite a un proceso reemplazar el token de seguridad primario de otro proceso. Es fundamental en la creación de nuevos procesos con diferentes credenciales o contextos de seguridad.
+- - `SeImpersonatePrivilege`: Este permiso permite a un proceso suplantar la identidad de otro proceso. Es fundamental para muchas técnicas de escalada de privilegios, ya que permite que un proceso menos privilegiado actúe como otro con mayores privilegios. En el contexto de esta tarea, es utilizado por `RoguePotato` para obtener el token SYSTEM.
+- - `SeDelegateSessionUserImpersonatePrivilege`: Obtener un token de suplantación para otro usuario en la misma sesión
+- `SeAuditPrivilege`: Este privilegio permite a un usuario o proceso generar registros de auditoría de eventos de seguridad. Es esencial para el monitoreo y seguimiento de actividades dentro del sistema.
+- `SeBackupPrivilege`: Este privilegio permite a un usuario o proceso realizar copias de seguridad y restauraciones del sistema, incluso de objetos protegidos por seguridad. Es utilizado por aplicaciones de copia de seguridad y restauración.
+- `SeChangeNotifyPrivilege`: Este privilegio permite a un usuario o proceso recibir notificaciones de cambios en objetos o directorios del sistema. Es utilizado para monitorear cambios en el sistema.
+- `SeCreateGlobalPrivilege`: Este privilegio permite a un usuario o proceso crear objetos globales en el sistema. Es utilizado para crear objetos que son accesibles por múltiples procesos.
+- `SeCreatePagefilePrivilege`: Este privilegio permite a un usuario o proceso crear archivos de paginación. Es utilizado en el manejo de memoria virtual del sistema.
+- `SeCreatePermanentPrivilege`: Este privilegio permite a un usuario o proceso crear objetos permanentes en el sistema. Es utilizado para crear objetos que persisten después de que el proceso que los creó haya terminado.
+- `SeCreateSymbolicLinkPrivilege`: Este privilegio permite a un usuario o proceso crear enlaces simbólicos en el sistema de archivos. Es utilizado para crear referencias a otros archivos o directorios.
+- `SeCreateTokenPrivilege`: Este privilegio permite a un usuario o proceso crear tokens de seguridad en el sistema. Es fundamental en la administración de la seguridad y la autenticación del sistema.
+- `SeDebugPrivilege`: Este privilegio permite a un usuario o proceso depurar otros procesos en el sistema. Es utilizado por herramientas de depuración y desarrollo.
+- `SeEnableDelegationPrivilege`: Este privilegio permite a un usuario o proceso habilitar la delegación de credenciales en el sistema. Es utilizado en entornos de red para permitir que los servidores deleguen las credenciales de los clientes.
+- `SeIncreaseBasePriorityPrivilege`: Este privilegio permite a un usuario o proceso aumentar la prioridad base de un proceso. Es utilizado para mejorar el rendimiento de ciertos procesos en el sistema.
+- `SeIncreaseQuotaPrivilege`: Este privilegio permite a un usuario o proceso aumentar los límites de cuotas de uso de recursos del sistema. Es utilizado para administrar el consumo de recursos por parte de los procesos.
+- `SeIncreaseWorkingSetPrivilege`: Este privilegio permite a un usuario o proceso aumentar el tamaño del conjunto de trabajo de un proceso. Es utilizado para controlar la cantidad de memoria física asignada a un proceso.
+- `SeLoadDriverPrivilege`: Este privilegio permite a un usuario o proceso cargar y descargar controladores de dispositivos en el sistema. Es utilizado por programas de instalación de controladores y servicios del sistema.
+- `SeLockMemoryPrivilege`: Este privilegio permite a un usuario o proceso bloquear páginas de memoria en la RAM del sistema. Es utilizado en aplicaciones que requieren un control específico sobre la memoria del sistema.
+- `SeMachineAccountPrivilege`: Este privilegio permite a un usuario o proceso crear y administrar cuentas de máquina en el dominio. Es utilizado en la administración de cuentas de equipo en entornos de red.
+- `SeManageVolumePrivilege`: Este privilegio permite a un usuario o proceso realizar operaciones de gestión de volúmenes, como formatear y desmontar volúmenes de disco. Es utilizado en la administración de discos y almacenamiento.
+- `SeProfileSingleProcessPrivilege`: Este privilegio permite a un usuario o proceso generar perfiles de rendimiento para un solo proceso. Es utilizado en el análisis y optimización del rendimiento de aplicaciones.
+- `SeRelabelPrivilege`: Este privilegio permite a un usuario o proceso cambiar las etiquetas de seguridad de los objetos del sistema. Es utilizado en entornos donde se requiere un control muy granular sobre los permisos de acceso.
+- `SeRemoteShutdownPrivilege`: Este privilegio permite a un usuario o proceso apagar o reiniciar el sistema de forma remota. Es utilizado en la administración remota de sistemas.
+- `SeRestorePrivilege`: Este privilegio permite a un usuario o proceso restaurar objetos protegidos por seguridad, incluso si el usuario o proceso no tiene acceso de lectura a esos objetos. Es utilizado en operaciones de restauración de seguridad.
+- `SeSecurityPrivilege`: Este privilegio permite a un usuario o proceso realizar cambios en la política de seguridad del sistema. Es utilizado por administradores del sistema para configurar y administrar la seguridad del sistema.
+- `SeShutdownPrivilege`: Este privilegio permite a un usuario o proceso apagar o reiniciar el sistema localmente. Es utilizado por aplicaciones y servicios que necesitan realizar operaciones de apagado o reinicio del sistema.
+- `SeSyncAgentPrivilege`: Este privilegio permite a un usuario o proceso sincronizar archivos y directorios en el sistema. Es utilizado por aplicaciones que necesitan mantener copias actualizadas de archivos en diferentes ubicaciones.
+- `SeSystemEnvironmentPrivilege`: Este privilegio permite a un usuario o proceso modificar la configuración del entorno del sistema. Es utilizado por aplicaciones que necesitan realizar cambios en las variables de entorno del sistema.
+- `SeSystemProfilePrivilege`: Este privilegio permite a un usuario o proceso generar perfiles de rendimiento del sistema. Es utilizado en el análisis y optimización del rendimiento del sistema.
+- `SeSystemtimePrivilege`: Este privilegio permite a un usuario o proceso cambiar la hora del sistema. Es utilizado por aplicaciones que necesitan sincronizar la hora del sistema con fuentes externas.
+- `SeTakeOwnershipPrivilege`: Este privilegio permite a un usuario o proceso tomar posesión de objetos del sistema, incluso si el usuario no tiene permisos de acceso. Es utilizado en operaciones de administración de sistemas.
+- `SeTcbPrivilege`: Este privilegio permite a un usuario o proceso actuar como parte del contexto de seguridad de confianza del sistema. Es utilizado por servicios del sistema y procesos de alta integridad.
+- `SeTimeZonePrivilege`: Este privilegio permite a un usuario o proceso cambiar la zona horaria del sistema. Es utilizado por aplicaciones que necesitan ajustar la zona horaria del sistema.
+- `SeTrustedCredManAccessPrivilege`: Este privilegio permite a un usuario o proceso acceder a las credenciales almacenadas en el Administrador de credenciales. Es utilizado por aplicaciones que necesitan acceder a credenciales almacenadas de forma segura.
+- `SeUndockPrivilege`: Este privilegio permite a un usuario o proceso quitar un equipo portátil de un acoplamiento. Es utilizado en dispositivos portátiles que pueden ser acoplados y desacoplados del sistema.
+- `SeUnsolicitedInputPrivilege`: Este privilegio permite a un usuario o proceso recibir entradas no solicitadas desde dispositivos de entrada del sistema. Es utilizado en entornos donde se necesita capturar entradas de dispositivos externos de forma segura.

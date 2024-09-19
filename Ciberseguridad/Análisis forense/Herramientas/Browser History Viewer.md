@@ -1,0 +1,5 @@
+El Visor del Historial del Navegador es una herramienta forense que se utiliza para recuperar y analizar el historial de navegación de un ordenador. Esta herramienta puede ser utilizada para investigar una variedad de delitos, incluyendo el fraude, el robo de identidad y el acoso.
+
+El Visor del Historial del Navegador funciona recuperando los archivos de caché del navegador web del ordenador. Estos archivos contienen información sobre los sitios web que ha visitado el usuario, así como las fechas y horas en que los visitó. El Visor del Historial del Navegador también puede recuperar información sobre las búsquedas que ha realizado el usuario en el navegador web.
+
+Esta herramienta puede ser muy útil para los investigadores forenses, ya que puede proporcionar información valiosa sobre las actividades de un usuario en Internet. Sin embargo, es importante tener en cuenta que el Visor del Historial del Navegador sólo puede recuperar información que se ha almacenado en los archivos de caché del navegador web. Si el usuario ha eliminado su historial de navegación, el Visor del Historial del Navegador no podrá recuperar esta información.

@@ -1,0 +1,1 @@
+El PTES responde a las siglas Penetration Testing Execution Standard (es decir, **Estándar de Ejecución de Pruebas de Penetración**), y se constituye como el primer método desarrollado de forma sistemática para evaluar las vulnerabilidades de diferentes sistemas informáticos.

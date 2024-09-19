@@ -1,0 +1,1 @@
+Crowd Response Forensic es una técnica de investigación forense que utiliza los datos de las redes sociales y otras fuentes en línea para recopilar información sobre un incidente o evento. Esta información puede utilizarse para identificar a los sospechosos, rastrear sus movimientos y comprender sus motivaciones.

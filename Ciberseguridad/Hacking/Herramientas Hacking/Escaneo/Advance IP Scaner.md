@@ -1,0 +1,2 @@
+Advance IP Scanner es una herramienta de software gratuita y fácil de usar para la gestión de redes. Permite a los usuarios escanear sus redes locales (LAN) para descubrir todos los dispositivos conectados, mostrando información detallada sobre cada uno de ellos. Para ejecutar la herramienta no es necesario tenerla instalada, unicamente ejecutando el archivo ya podremos utilizarla
+![[Pasted image 20240612141714.png]]

@@ -1,0 +1,3 @@
+El Browser History Capturer es una herramienta que se utiliza para capturar el historial de navegación de un usuario. Esto puede ser útil para una variedad de propósitos, como la investigación de seguridad, la resolución de problemas y el control parental.
+
+El Browser History Capturer funciona mediante el registro de las solicitudes HTTP que se envían desde el navegador web del usuario. Estas solicitudes contienen información sobre las páginas web que el usuario ha visitado, así como la hora y la fecha en que se visitaron. El Browser History Capturer puede almacenar esta información en un archivo de registro o enviarla a un servidor remoto.

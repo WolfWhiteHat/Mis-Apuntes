@@ -1,0 +1,2 @@
+Es una herramienta diseñada para crear un disco duro virtual desde su disco duro físico. A diferencia de otras herramientas similares, esta le permite crear unidades virtuales en un sistema que está en línea.
+![[Pasted image 20240918095216.png]]

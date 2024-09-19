@@ -1,0 +1,2 @@
+Es una herramienta diseñada para mostrar los clusters en su disco duro. Obtendrá una representación visual de los clústeres, pero también puede hacer doble clic en un clúster determinado para ver qué archivos lo ocupan.
+![[Pasted image 20240507133622.png]]

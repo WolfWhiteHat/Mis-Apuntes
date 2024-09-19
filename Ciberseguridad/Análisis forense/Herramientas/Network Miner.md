@@ -1,0 +1,3 @@
+Network Miner es una herramienta forense de red de código abierto que se utiliza para analizar el tráfico de red capturado. Puede utilizarse para una variedad de propósitos, incluyendo la resolución de problemas de red, la detección de intrusiones y la recopilación de pruebas digitales.
+
+Network Miner funciona capturando el tráfico de red y luego analizándolo en busca de información útil. Esta información puede incluir direcciones IP, nombres de host, números de puerto, protocolos y datos de paquetes. Network Miner también puede utilizarse para reconstruir sesiones TCP y UDP, y para exportar los datos capturados a una variedad de formatos.

@@ -1,0 +1,11 @@
+SFC es una herramienta de línea de comandos en sistemas operativos Windows que se utiliza para verificar y reparar archivos del sistema dañados o faltantes. Algunas de las funciones principales del comando `sfc` incluyen:
+
+- **Verificar archivos del sistema**: El comando `sfc` escanea los archivos del sistema protegidos por Windows en busca de corrupción o daño. Estos archivos son críticos para el funcionamiento adecuado del sistema operativo.
+- **Reparar archivos del sistema**: Si se encuentran archivos del sistema dañados, el comando `sfc` intentará repararlos automáticamente. Utiliza una copia de seguridad de los archivos del sistema almacenados en la caché de WinSxS (componente de almacenamiento de Windows) o en el medio de instalación de Windows para restaurar los archivos dañados con versiones correctas y saludables.
+- **Restaurar la integridad del sistema**: Al reparar los archivos del sistema dañados, `sfc` ayuda a mantener la integridad del sistema operativo, lo que puede mejorar la estabilidad y el rendimiento general del sistema.
+
+# **Comandos SFC**
+- `sfc /scannow`: El comando sfc /scannow examinará todos los archivos de sistema protegidos y remplaza los archivos dañados con una copia en caché ubicada en una carpeta comprimida en **%WinDir%**\System32\dllcache.  El marcador de posición %WinDir% representa la carpeta del sistema operativo Windows. Por ejemplo, C:\Windows.
+- `cd C`:\Windows\Logs\CBS\
+- `notepad sfcdetails.txt`:
+- `DISM /Online /Cleanup-Image /RestoreHealth`: Este comando se utiliza para escanear la imagen de Windows en línea y restaurar la salud de la misma mediante la reparación de cualquier daño que se encuentre. El parámetro `/Online` indica que se realizará la operación en la imagen en línea del sistema operativo actual. El parámetro `/Cleanup-Image` indica que se limpiará la imagen de Windows de cualquier archivo dañado o innecesario. Y finalmente, el parámetro `/RestoreHealth` indica que se intentará restaurar la salud de la imagen de Windows mediante la reparación de cualquier archivo de sistema dañado que se encuentre. Este comando es útil para resolver problemas de corrupción del sistema operativo y restaurar su funcionalidad.

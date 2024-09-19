@@ -1,0 +1,1 @@
+Belkasoft Live RAM Capturer es una diminuta herramienta forense gratuita que permite extraer de manera segura el contenido completo de la memoria volátil de una computadora, incluso si está protegido por un sistema anti-depuración o anti-dumping activo.

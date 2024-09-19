@@ -1,0 +1,2 @@
+Es una pequeña herramienta que te permite cambiar el tamaño de tu caché. Esta herramienta le permite establecer nuevos tamaños mínimos y máximos para su caché, así como restablecerlos a los valores predeterminados con un solo clic.
+![[Pasted image 20240507131919.png]]

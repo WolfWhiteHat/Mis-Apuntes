@@ -1,0 +1,1 @@
+La suplantación de ARP es enviar mensajes ARP falsos a la Ethernet. Normalmente la finalidad es asociar la dirección MAC del atacante con la dirección IP de otro nodo​, como por ejemplo la puerta de enlace predeterminada.

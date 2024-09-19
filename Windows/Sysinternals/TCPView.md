@@ -1,0 +1,2 @@
+Es una aplicación que muestra información detallada sobre todos los puntos finales TCP y UDP de tu ordenador. Con esta herramienta puede ver las direcciones locales y remotas y el estado de las conexiones TCP.
+![[Pasted image 20240507134213.png]]

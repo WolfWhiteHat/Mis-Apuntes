@@ -1,0 +1,1 @@
+Un ataque en el que se inyecta código malicioso en páginas web visitadas por otros usuarios.

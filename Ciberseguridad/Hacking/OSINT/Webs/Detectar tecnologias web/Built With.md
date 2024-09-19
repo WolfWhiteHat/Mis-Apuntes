@@ -1,0 +1,1 @@
+Complemento mozilla built with, muestra información relevante sobre la pagina web en la que estamos accediendo

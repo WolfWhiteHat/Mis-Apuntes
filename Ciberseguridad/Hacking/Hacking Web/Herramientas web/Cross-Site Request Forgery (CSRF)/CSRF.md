@@ -1,0 +1,1 @@
+Un ataque en el que un usuario no autorizado realiza acciones en un sitio web en el que el usuario autenticado está actualmente conectado.

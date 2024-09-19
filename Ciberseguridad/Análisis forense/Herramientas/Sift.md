@@ -1,0 +1,5 @@
+Sift Forensic es una herramienta de software de análisis forense digital utilizada para investigar incidentes de seguridad informática y recopilar pruebas digitales. Es una herramienta poderosa que se puede utilizar para analizar una amplia variedad de datos, incluidos archivos de registro, correos electrónicos, documentos y archivos multimedia.
+
+Sift Forensic se utiliza a menudo para investigar incidentes de seguridad informática, como ataques de malware, intrusiones y fugas de datos. También se puede utilizar para recopilar pruebas digitales para investigaciones legales, como casos de fraude, robo y asesinato.
+
+Sift Forensic es una herramienta compleja y poderosa, pero también es muy fácil de usar. Su interfaz gráfica de usuario (GUI) es intuitiva y fácil de navegar, lo que la hace accesible incluso para usuarios sin experiencia en informática forense.

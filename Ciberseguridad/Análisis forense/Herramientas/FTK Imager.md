@@ -1,0 +1,3 @@
+FTK Imager es una herramienta forense informática utilizada para la adquisición de datos de dispositivos de almacenamiento digital, como discos duros, unidades flash USB y tarjetas de memoria. Es un software comercial desarrollado por AccessData, una empresa líder en el campo de la informática forense.
+
+FTK Imager se utiliza para crear una imagen forense exacta de un dispositivo de almacenamiento, lo que significa que se copia todo el contenido del dispositivo, incluidos los archivos eliminados y el espacio no asignado. Esta imagen forense se puede utilizar posteriormente para analizar los datos y buscar pruebas digitales, como archivos ocultos, registros de actividad y comunicaciones.

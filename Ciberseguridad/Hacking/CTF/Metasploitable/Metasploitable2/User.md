@@ -1,0 +1,2 @@
+user: msfadmin
+passwd: msfadmin

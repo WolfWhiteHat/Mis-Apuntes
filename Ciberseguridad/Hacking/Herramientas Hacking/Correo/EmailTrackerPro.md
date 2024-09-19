@@ -1,0 +1,1 @@
+Email Tracker Pro es una herramienta de seguimiento de correo electrónico que permite a los usuarios rastrear la actividad de sus correos electrónicos enviados. Esto incluye información como cuándo se abrió el correo electrónico, cuántas veces se abrió y en qué dispositivos se abrió.

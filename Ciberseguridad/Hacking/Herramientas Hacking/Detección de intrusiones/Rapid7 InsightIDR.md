@@ -1,0 +1,5 @@
+Rapid7 InsightIDR es una plataforma de detección y respuesta extendida (XDR) que ayuda a las organizaciones a protegerse contra amenazas avanzadas. Combina la detección de amenazas, la investigación y la respuesta en una única plataforma, lo que permite a las organizaciones responder a las amenazas de forma más rápida y eficaz.
+
+InsightIDR utiliza una variedad de técnicas para detectar amenazas, incluyendo el análisis de comportamiento de usuarios y entidades (UEBA), el análisis de tráfico de red y el análisis de vulnerabilidades. También cuenta con una amplia gama de integraciones con otras herramientas de seguridad, lo que permite a las organizaciones consolidar sus datos de seguridad y obtener una visión más completa de su entorno de seguridad.
+
+InsightIDR es una plataforma escalable que puede utilizarse en organizaciones de todos los tamaños. También es fácil de usar, lo que permite a las organizaciones implementar y utilizar la plataforma rápidamente.
