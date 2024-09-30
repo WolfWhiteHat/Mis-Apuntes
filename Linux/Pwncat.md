@@ -1,6 +1,6 @@
 `pwncat` es una herramienta diseñada para simplificar y mejorar la interacción con conexiones de red, especialmente en el contexto de hacking ético y pruebas de penetración. Es esencialmente una versión mejorada de `netcat` (también conocido como `nc`), una herramienta de línea de comandos utilizada para leer y escribir datos a través de conexiones de red.
 ```
-https://github.com/calebstewart/pwncat.git
+https://github.com/calebstewart/pwncat
 ```
 
 # Instalacion Pwncat

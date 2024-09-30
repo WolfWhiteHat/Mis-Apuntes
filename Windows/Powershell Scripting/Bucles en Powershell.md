@@ -1,4 +1,4 @@
-### BUCLE FOR
+# BUCLE FOR
 ```powershell
 $frutas = "Manzana", "Banana", "Naranja", "Pera", "Melón"
 

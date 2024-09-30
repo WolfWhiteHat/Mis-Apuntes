@@ -18,9 +18,15 @@ Comprobamos que pueda resolver nombres de dominio
 ![[Pasted image 20240704135625.png]]
 
 # Mostrar estado interfaces de red
+```
+ip link
+```
 ![[Pasted image 20240704135745.png]]
 
 # Mostrar tabla de enrutamiento
+```
+ip route
+```
 ![[Pasted image 20240704135807.png]]
 
 # Verificar estado servicio de red

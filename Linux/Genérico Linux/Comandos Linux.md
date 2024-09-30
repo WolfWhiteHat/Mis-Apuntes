@@ -25,9 +25,22 @@
 | **sshconvert** | Convierte un archivos xlsx a csv                                                                                                                                                                             |
 | **xargs**      | Se utiliza para construir y ejecutar líneas de comando a partir de la salida de otros comandos o de archivos                                                                                                 |
 | **wc -w**      | Contar numero de palabras de un archivo                                                                                                                                                                      |
+| **less/more**  | Permiten desplazarte hacia arriba y hacia abajo en la salida del comando                                                                                                                                     |
+| **Which**      | Busca en el path si el comando esta disponible y donde esta ubicado                                                                                                                                          |
+|                |                                                                                                                                                                                                              |
 
 
 ![[Pasted image 20240620082311.png]]
+
+# **Gestores de paquetes**
+```
+apt
+apt-get
+yum
+dnf
+zypper
+```
+
 
 # **Ocultar prueba pentesting**
 ```
@@ -387,3 +400,9 @@ echo "archivo1 archivo2 archivo3" | xargs touch
 Alernatvias comando init:
 • **reboot** — para reiniciar el sistema.
 • **shutdown -r now** — para reiniciar el sistema inmediatamente.
+
+
+# **Cambiar teclado español temporal**
+```
+sudo loadkeys es
+```
